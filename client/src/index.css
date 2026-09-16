@@ -305,8 +305,8 @@ footer .brand-logo { width: 126px; }
 .location-pin { position: absolute; top: 39%; left: 51%; display: grid; height: 60px; width: 60px; place-items: center; border: 1px solid #d6b77d; border-radius: 50%; color: #d6b77d; box-shadow: 0 0 0 12px #d6b77d15, 0 0 0 24px #d6b77d08; }
 .location-label { position: absolute; right: 18px; bottom: 18px; left: 18px; display: flex; align-items: center; justify-content: space-between; gap: 10px; border: 1px solid #f8f5ef18; background: #17352ee6; padding: 15px 17px; backdrop-filter: blur(10px); }
 .location-label strong { font-size: .78rem; }.location-label span { color: #f8f5ef8c; font-size: .7rem; }
-.floating-whatsapp { position: fixed; right: 24px; bottom: 24px; z-index: 50; display: grid; height: 70px; width: 70px; place-items: center; border: 4px solid var(--paper); border-radius: 50%; background: #28b94e; color: #fff; box-shadow: 0 12px 28px #218c6250; transition: transform .2s ease; }
-.whatsapp-mark { height: 38px; width: 38px; }
+.floating-whatsapp { position: fixed; right: 24px; bottom: 24px; z-index: 50; display: grid; height: 58px; width: 58px; place-items: center; border: 3px solid var(--paper); border-radius: 50%; background: #28b94e; color: #fff; box-shadow: 0 12px 28px #218c6250; transition: transform .2s ease; }
+.whatsapp-mark { height: 31px; width: 31px; }
 .floating-whatsapp:hover { transform: scale(1.07); }
 .floating-whatsapp-labeled { display: inline-flex; height: auto; width: auto; gap: 8px; padding: 12px 17px 12px 13px; border-width: 3px; font-size: .78rem; font-weight: 700; }
 .mobile-cta { display: none; }
@@ -339,7 +339,7 @@ footer .brand-logo { width: 126px; }
   .trust-item { border-right: 0; border-bottom: 1px solid #20221f15; padding: 4px 0 16px; }
   .trust-item:last-child { border-bottom: 0; padding-bottom: 4px; }
   .feature-card-dark.sm\:translate-y-8 { transform: none; }
-  .floating-whatsapp { right: 18px; bottom: 18px; height: 66px; width: 66px; }
+  .floating-whatsapp { right: 16px; bottom: 16px; height: 54px; width: 54px; }
   .mobile-cta { position: fixed; right: 0; bottom: 0; left: 0; z-index: 45; display: flex; justify-content: center; border-top: 1px solid #20221f15; background: #f8f5efd9; padding: 10px 16px; backdrop-filter: blur(14px); }
   .mobile-cta .whatsapp-button { width: 100%; justify-content: center; }
   footer { padding-bottom: 80px; }
