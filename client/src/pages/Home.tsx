@@ -7,8 +7,12 @@ function Logo() {
   return <a href="#inicio" aria-label="Vita Sorriso - início"><img src="/manus-storage/vita-logo-enviada_f945e36b.png" alt="Vita Sorriso Implantes" className="brand-logo" /></a>;
 }
 
+function WhatsAppIcon({ size = 21 }: { size?: number }) {
+  return <svg className="whatsapp-inline-icon" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.1-.471-.149-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.1-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.793.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347ZM12.004 2a9.94 9.94 0 0 0-8.48 15.12L2 22l5.02-1.507A9.94 9.94 0 1 0 12.004 2Zm0 18.2a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-2.98.895.915-2.905-.195-.31A8.24 8.24 0 1 1 12.004 20.2Z" /></svg>;
+}
+
 function WhatsAppButton({ compact = false }: { compact?: boolean }) {
-  return <a href={whatsappUrl} target="_blank" rel="noreferrer" className={`whatsapp-button ${compact ? "px-4 py-2.5 text-xs" : "px-6 py-4"}`} onClick={() => window.dispatchEvent(new Event("whatsapp_click"))}><MessageCircle size={compact ? 16 : 19} fill="currentColor" /><span>{compact ? "Agendar avaliação" : "Quero agendar minha avaliação"}</span>{!compact && <ArrowUpRight size={16} />}</a>;
+  return <a href={whatsappUrl} target="_blank" rel="noreferrer" className={`whatsapp-button ${compact ? "px-5 py-3 text-sm" : "px-6 py-4"}`} onClick={() => window.dispatchEvent(new Event("whatsapp_click"))}><WhatsAppIcon size={compact ? 22 : 21} /><span>{compact ? "WhatsApp" : "Quero agendar minha avaliação"}</span>{!compact && <ArrowUpRight size={16} />}</a>;
 }
 
 const faqs = [
