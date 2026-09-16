@@ -23,7 +23,7 @@ const faqs = [
 
 export default function Home() {
   return <div className="min-h-screen overflow-x-hidden bg-paper text-ink">
-    <div className="topline"><span className="topline-dot" /> Implantes dentários em Curitiba <span className="hidden sm:inline">· Segunda a sexta, 8h às 18h</span></div>
+    <div className="topline"><span className="topline-dot" /> Implantes dentários em Curitiba</div>
     <header className="simple-header"><div className="container flex h-[74px] items-center justify-between gap-5"><Logo /><WhatsAppButton compact /></div></header>
 
     <main>
