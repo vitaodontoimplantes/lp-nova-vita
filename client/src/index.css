@@ -220,6 +220,7 @@ body { font-family: "DM Sans", sans-serif; background: var(--paper); color: var(
 .hero-visual { position: relative; min-height: 500px; }
 .hero-image-wrap { position: absolute; inset: 0 4% 0 10%; overflow: hidden; border-radius: 2px 110px 2px 110px; box-shadow: 22px 25px 70px #3340321c; }
 .hero-image { height: 100%; width: 100%; object-fit: cover; object-position: 50% center; }
+.hero-image-facade { object-position: center center; }
 .hero-image-shade { position: absolute; inset: 0; background: linear-gradient(135deg, #fffaf000 35%, #1c39301c 100%); }
 .hero-note { position: absolute; z-index: 2; display: flex; align-items: center; gap: 10px; border: 1px solid #ffffff; background: #fffdf9e8; padding: 11px 15px 11px 11px; box-shadow: 0 14px 35px #27372b18; backdrop-filter: blur(10px); }
 .hero-note-top { top: 13%; left: 0; border-radius: 2px 24px 2px 24px; }
