@@ -6,11 +6,7 @@ const mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=Rua+Jos%C3%A
 function Logo() {
   return (
     <a href="#inicio" className="group inline-flex items-center gap-3" aria-label="Vita Sorriso - início">
-      <span className="logo-mark"><Sparkles size={18} strokeWidth={1.7} /></span>
-      <span className="leading-none">
-        <span className="block font-display text-[1.22rem] tracking-[0.08em] text-ink">Vita Sorriso</span>
-        <span className="mt-1 block text-[0.56rem] font-bold uppercase tracking-[0.34em] text-gold">Implantes</span>
-      </span>
+      <img src="/manus-storage/vita-logo-enviada_f945e36b.png" alt="Vita Sorriso Implantes" className="brand-logo" />
     </a>
   );
 }
@@ -81,7 +77,7 @@ export default function Home() {
 
             <div className="hero-visual animate-fade-in">
               <div className="hero-image-wrap">
-                <img src="/manus-storage/vita-hero_b4242c84.jpg" alt="Paciente sorrindo em um ambiente acolhedor da Vita Sorriso" className="hero-image" />
+                <img src="/manus-storage/clinica-hero_7757a1f7.jpg" alt="Profissional da Vita Sorriso na clínica de implantes em Curitiba" className="hero-image" />
                 <div className="hero-image-shade" />
               </div>
               <div className="hero-note hero-note-top"><span className="note-icon"><Star size={14} fill="currentColor" /></span><span><strong>4,9</strong><small>no Google</small></span></div>
@@ -141,7 +137,7 @@ export default function Home() {
           ].map(([question, answer]) => <details key={question} className="faq-item"><summary>{question}<ChevronDown size={18} /></summary><p>{answer}</p></details>)}</div></div>
         </section>
 
-        <section className="location-section" id="localizacao"><div className="container grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]"><div><div className="eyebrow eyebrow-light"><span className="eyebrow-line" /> Estamos em Curitiba</div><h2 className="section-title mt-6 text-paper">Uma clínica feita para você se sentir à vontade.</h2><p className="mt-5 max-w-[520px] leading-7 text-paper/65">Rua José Loureiro, 268 — Centro, Curitiba — PR. Atendimento de segunda a sexta, das 8h às 18h.</p><div className="mt-8 flex flex-col items-start gap-3 sm:flex-row"><WhatsAppButton /><a href={mapsUrl} target="_blank" rel="noreferrer" className="outline-button"><MapPin size={16} /> Como chegar</a></div></div><div className="location-card"><div className="map-grid" /><div className="location-pin"><MapPin size={22} /></div><div className="location-label"><strong>Vita Sorriso Implantes</strong><span>Centro · Curitiba/PR</span></div></div></div></section>
+        <section className="location-section" id="localizacao"><div className="container grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]"><div><div className="eyebrow eyebrow-light"><span className="eyebrow-line" /> Estamos em Curitiba</div><h2 className="section-title mt-6 text-paper">Uma clínica feita para você se sentir à vontade.</h2><p className="mt-5 max-w-[520px] leading-7 text-paper/65">Rua José Loureiro, 268 — Centro, Curitiba — PR. Atendimento de segunda a sexta, das 8h às 18h.</p><div className="mt-8 flex flex-col items-start gap-3 sm:flex-row"><WhatsAppButton /><a href={mapsUrl} target="_blank" rel="noreferrer" className="outline-button"><MapPin size={16} /> Como chegar</a></div></div><div className="clinic-gallery"><img src="/manus-storage/clinica-recepcao_dc727bef.jpg" alt="Recepção da clínica Vita Sorriso" className="clinic-gallery-main" /><img src="/manus-storage/clinica-fachada-1_83ebbb19.jpg" alt="Fachada da clínica Vita Sorriso" className="clinic-gallery-small" /><div className="location-label"><strong>Vita Sorriso Implantes</strong><span>Centro · Curitiba/PR</span></div></div></div></section>
       </main>
 
       <footer className="border-t border-ink/10 bg-paper"><div className="container flex flex-col gap-6 py-8 text-sm text-ink/50 sm:flex-row sm:items-center sm:justify-between"><Logo /><div className="flex flex-col gap-2 text-left sm:items-end"><a href="tel:+554196592624" className="flex items-center gap-2 hover:text-ink"><Phone size={14} /> (41) 9659-2624</a><span>Vita Sorriso Implantes · Curitiba/PR</span></div></div><div className="container border-t border-ink/10 py-5 text-[0.68rem] leading-5 text-ink/40">As informações desta página são gerais. Indicação, prazos, resultados e condições de tratamento variam conforme cada caso e devem ser definidos em avaliação clínica. Fotos e depoimentos devem ser publicados somente com autorização.</div></footer>
