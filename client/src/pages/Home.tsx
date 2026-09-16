@@ -35,6 +35,6 @@ export default function Home() {
     </main>
 
     <footer className="border-t border-ink/10 bg-paper"><div className="container flex flex-col items-center gap-4 py-7 text-center"><Logo /><p className="max-w-[420px] text-center text-[0.68rem] leading-5 text-ink/45">Vita Sorriso Implantes · Curitiba/PR<br />Resultados e indicação variam conforme cada caso.</p></div></footer>
-    <a href={whatsappUrl} target="_blank" rel="noreferrer" className="floating-whatsapp" aria-label="Falar com a Vita Sorriso pelo WhatsApp"><MessageCircle size={32} strokeWidth={1.8} /></a>
+    <a href={whatsappUrl} target="_blank" rel="noreferrer" className="floating-whatsapp" aria-label="Falar com a Vita Sorriso pelo WhatsApp"><svg className="whatsapp-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.1" fill="none" stroke="currentColor" strokeWidth="1.7" /><path d="M8.65 18.25 9.3 15.9a6.1 6.1 0 1 1 2.72 1.12l-2.37 1.23Z" fill="currentColor" /><path d="M10.2 9.05c-.16-.36-.33-.37-.49-.38h-.42c-.15 0-.39.06-.6.29-.21.23-.8.78-.8 1.9s.82 2.2.93 2.35c.12.15 1.58 2.53 3.83 3.44 1.9.77 2.28.62 2.69.58.41-.04 1.32-.54 1.51-1.06.19-.52.19-.96.13-1.06-.05-.1-.2-.15-.42-.27-.22-.11-1.32-.65-1.52-.73-.2-.08-.35-.11-.5.11-.15.23-.57.73-.7.88-.13.15-.26.17-.48.06-.22-.11-.92-.34-1.75-1.08-.65-.58-1.09-1.3-1.22-1.52-.13-.23-.01-.35.1-.46.1-.1.22-.26.33-.39.11-.13.15-.23.22-.38.07-.15.04-.29-.02-.42l-.84-1.86Z" fill="var(--whatsapp)" /></svg></a>
   </div>;
 }
