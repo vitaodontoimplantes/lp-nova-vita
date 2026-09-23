@@ -376,3 +376,37 @@ footer .brand-logo { width: 126px; }
   .footer-brand p { max-width: 320px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+/* Responsive gallery: keep the original vertical photos readable without
+   allowing them to stretch the layout or create horizontal overflow. */
+.clinic-hero-gallery { width: 100%; max-width: 600px; margin-inline: auto; }
+.clinic-hero-main, .clinic-hero-thumbs img { min-width: 0; }
+.clinic-hero-main img, .clinic-hero-thumbs img { display: block; object-position: center 42%; }
+
+@media (min-width: 768px) {
+  .ppc-hero > .container { min-height: 610px; }
+  .clinic-hero-gallery { min-height: 520px; max-height: 620px; }
+  .clinic-hero-main img { object-position: center center; }
+}
+
+@media (max-width: 767px) {
+  .container { padding-left: 1.15rem; padding-right: 1.15rem; }
+  .simple-header .container { gap: 12px; }
+  .simple-header .brand-logo { width: 112px; max-width: 42vw; }
+  .simple-header .whatsapp-button { flex: 0 1 auto; padding: 0.7rem 0.9rem; font-size: 0.75rem; }
+  .ppc-hero h1 { max-width: 10ch; font-size: clamp(2.65rem, 13vw, 3.55rem); }
+  .ppc-hero .whatsapp-button { width: 100%; justify-content: center; }
+  .ppc-hero-visual { min-height: 0; margin-top: 0.5rem; }
+  .clinic-hero-gallery { min-height: 0; grid-template-rows: minmax(250px, 63vw) 94px; gap: 8px; }
+  .clinic-hero-main { border-radius: 2px 38px 2px 38px; }
+  .clinic-hero-main img { object-position: center 48%; }
+  .clinic-hero-thumbs { gap: 8px; }
+  .clinic-hero-thumbs img { border-radius: 14px 2px 14px 2px; }
+  .clinic-hero-thumbs img:last-child { border-radius: 2px 14px 2px 14px; }
+  .hero-note-top { top: 8%; left: -5px; transform: scale(0.82); transform-origin: left top; }
+  .ppc-proof > .container { padding-top: 0.6rem; padding-bottom: 0.6rem; }
+  .ppc-process, .ppc-faq { padding-top: 3.6rem; padding-bottom: 3.6rem; }
+  .section-title { font-size: clamp(2.2rem, 11vw, 3rem); }
+  .faq-item summary { gap: 12px; font-size: 1.08rem; }
+  .floating-whatsapp { right: 14px; bottom: 14px; }
+}
