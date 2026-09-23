@@ -177,8 +177,8 @@
 }
 
 :root {
-  --paper: #fbfbfb;
-  --paper-deep: #f2f2f2;
+  --paper: #ffffff;
+  --paper-deep: #ffffff;
   --ink: #151515;
   --ink-soft: #5a5a5a;
   --gold: #c5161d;
@@ -196,7 +196,7 @@ img, video { max-width: 100%; }
 .text-ink { color: var(--ink); }
 .text-gold { color: var(--gold); }
 .font-display { font-family: "DM Serif Display", Georgia, serif; }
-.topline { display: flex; min-height: 30px; align-items: center; justify-content: center; gap: 9px; border-bottom: 1px solid #c5161d2a; background: var(--paper-deep); color: var(--ink-soft); font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.topline { display: flex; min-height: 30px; align-items: center; justify-content: center; gap: 9px; border-bottom: 1px solid #15151512; background: #ffffff; color: var(--ink-soft); font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .topline-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--gold-light); box-shadow: 0 0 0 4px #ef7a7f22; animation: status-pulse 1.8s ease-in-out infinite; }
 .logo-mark { display: inline-flex; height: 38px; width: 38px; align-items: center; justify-content: center; border: 1px solid #c5161d88; border-radius: 50%; color: var(--gold); transition: transform .2s ease, background .2s ease; }
 .group:hover .logo-mark { transform: rotate(8deg); background: #c5161d12; }
@@ -208,7 +208,7 @@ footer .brand-logo { width: 126px; }
 .nav-link::after { position: absolute; bottom: -8px; left: 0; height: 1px; width: 0; background: var(--gold); content: ""; transition: width .2s ease; }
 .nav-link:hover { color: var(--ink); }
 .nav-link:hover::after { width: 100%; }
-.simple-header { border-bottom: 1px solid #20221f12; background: #f8f5efee; }
+.simple-header { border-bottom: 1px solid #15151512; background: #ffffff; }
 .header-nav { display: flex; align-items: center; gap: 25px; margin-left: auto; margin-right: 10px; }
 .header-nav a { color: var(--ink-soft); font-size: .72rem; font-weight: 700; letter-spacing: .04em; transition: color .2s ease; }
 .header-nav a:hover { color: var(--gold); }
@@ -216,8 +216,8 @@ footer .brand-logo { width: 126px; }
 .whatsapp-button:hover { background: #1b7955; box-shadow: 0 14px 28px #218c6240; transform: translateY(-2px); }
 .whatsapp-button:active { transform: scale(.97); }
 .hero-section { position: relative; overflow: hidden; background: var(--paper); }
-.hero-section::before { position: absolute; top: 0; right: 8%; height: 100%; width: 35%; background: linear-gradient(120deg, transparent, #fff9ef 56%, #f2ebdf); content: ""; opacity: .8; }
-.hero-orb { position: absolute; border: 1px solid #c5161d25; border-radius: 50%; }
+.hero-section::before { display: none; }
+.hero-orb { display: none; }
 .hero-orb-one { top: -160px; right: -100px; height: 420px; width: 420px; }
 .hero-orb-two { bottom: -220px; left: 35%; height: 410px; width: 410px; }
 .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--gold); font-size: .69rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
@@ -237,7 +237,7 @@ footer .brand-logo { width: 126px; }
 .clinic-hero-thumbs img:last-child { border-radius: 2px 26px 2px 26px; }
 .ppc-hero .whatsapp-button { min-height: 54px; box-shadow: 0 14px 27px #218c6240; }
 .hero-image-shade { position: absolute; inset: 0; background: linear-gradient(135deg, #fffaf000 35%, #1c39301c 100%); }
-.hero-note { position: absolute; z-index: 2; display: flex; align-items: center; gap: 10px; border: 1px solid #ffffff; background: #fffdf9e8; padding: 11px 15px 11px 11px; box-shadow: 0 14px 35px #27372b18; backdrop-filter: blur(10px); }
+.hero-note { position: absolute; z-index: 2; display: flex; align-items: center; gap: 10px; border: 1px solid #ffffff; background: #ffffffed; padding: 11px 15px 11px 11px; box-shadow: 0 14px 35px #27372b18; backdrop-filter: blur(10px); }
 .hero-note-top { top: 13%; left: 0; border-radius: 2px 24px 2px 24px; }
 .hero-note-bottom { right: 0; bottom: 12%; border-radius: 24px 2px 24px 2px; }
 .hero-note strong, .hero-note small { display: block; }
@@ -247,20 +247,20 @@ footer .brand-logo { width: 126px; }
 .note-icon-dark { background: var(--forest); color: #fff; }
 .hero-caption { position: absolute; bottom: -25px; right: 12%; display: flex; align-items: center; gap: 8px; color: #73786f; font-family: "DM Serif Display", Georgia, serif; font-size: .92rem; font-style: italic; }
 .caption-rule { display: inline-block; height: 1px; width: 22px; background: var(--gold); }
-.trust-strip { border-top: 1px solid #c5161d2a; border-bottom: 1px solid #c5161d2a; background: #f2f2f2; }
-.ppc-proof { border-top: 1px solid #c5161d2a; border-bottom: 1px solid #c5161d2a; background: #f2f2f2; }
+.trust-strip { border-top: 1px solid #15151512; border-bottom: 1px solid #15151512; background: #ffffff; }
+.ppc-proof { border-top: 1px solid #15151512; border-bottom: 1px solid #15151512; background: #ffffff; }
 .ppc-proof > .container { display: grid; }
 .ppc-proof strong, .ppc-proof span { display: block; }
   .ppc-proof strong { font-size: .82rem; }
   .ppc-proof span { margin-top: 3px; color: var(--ink-soft); font-size: .73rem; }
-  .video-testimonials { background: linear-gradient(135deg, #f0ebe2 0%, #f8f5ef 58%, #edf1eb 100%); padding: 5.7rem 0; }
+  .video-testimonials { background: #ffffff; padding: 5.7rem 0; }
   .video-testimonials-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
   .video-testimonials-heading > p { max-width: 360px; color: var(--ink-soft); font-size: .86rem; line-height: 1.75; }
   .video-testimonials-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 40px; max-width: 760px; }
   .video-testimonial-card { overflow: hidden; border: 1px solid #c5161d35; border-radius: 22px; background: #20221f; box-shadow: 0 18px 38px #20221f20; }
   .video-frame { aspect-ratio: 9 / 16; overflow: hidden; background: #111; }
   .video-frame video { display: block; height: 100%; width: 100%; border: 0; background: #111; object-fit: cover; }
-  .video-testimonial-caption { display: flex; flex-direction: column; gap: 5px; background: #fffdf9; padding: 16px 18px 18px; }
+  .video-testimonial-caption { display: flex; flex-direction: column; gap: 5px; background: #ffffff; padding: 16px 18px 18px; }
   .video-testimonial-caption span { color: var(--gold); font-size: .65rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
   .video-testimonial-caption strong { color: var(--ink); font-family: "DM Serif Display", Georgia, serif; font-size: 1.35rem; font-weight: 400; line-height: 1.05; }
   .ppc-info { background: var(--paper); padding: 5.7rem 0; }
@@ -268,14 +268,14 @@ footer .brand-logo { width: 126px; }
 .info-cards article > span { color: var(--gold); font-size: .7rem; font-weight: 700; letter-spacing: .15em; }
 .info-cards h3 { margin-top: 15px; font-family: "DM Serif Display", Georgia, serif; font-size: 1.65rem; letter-spacing: -.02em; }
 .info-cards p { max-width: 290px; margin-top: 7px; color: var(--ink-soft); font-size: .84rem; line-height: 1.7; }
-.ppc-process { background: #f2f2f2; padding: 5.7rem 0; }
+.ppc-process { background: #ffffff; padding: 5.7rem 0; }
 .ppc-section-heading { max-width: 620px; }
 .ppc-steps > div { border-top: 1px solid #20221f25; padding-top: 17px; }
 .ppc-steps span { color: var(--gold); font-size: .7rem; font-weight: 700; letter-spacing: .15em; }
 .ppc-steps h3 { margin-top: 15px; font-family: "DM Serif Display", Georgia, serif; font-size: 1.8rem; letter-spacing: -.02em; }
 .ppc-steps p { max-width: 255px; margin-top: 5px; color: var(--ink-soft); font-size: .84rem; line-height: 1.65; }
 .ppc-faq { background: var(--paper); padding: 5.7rem 0; }
-.ppc-final { border-top: 1px solid #c5161d2a; background: var(--paper); padding: 4rem 0; }
+.ppc-final { border-top: 1px solid #15151512; background: #ffffff; padding: 4rem 0; }
 .trust-item { display: flex; align-items: center; gap: 13px; border-right: 1px solid #20221f15; padding: 4px 18px 4px 0; }
 .trust-item:last-child { border-right: 0; }
 .trust-item strong, .trust-item small { display: block; }
