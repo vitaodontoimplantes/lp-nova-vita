@@ -327,7 +327,7 @@ footer .brand-logo { width: 126px; }
 }
 .floating-whatsapp:hover { transform: scale(1.07); }
 .floating-whatsapp-labeled { display: inline-flex; height: auto; width: auto; gap: 8px; padding: 12px 17px 12px 13px; border-width: 3px; font-size: .78rem; font-weight: 700; }
-.footer-grid { display: grid; grid-template-columns: 1.3fr .8fr .9fr; gap: 48px; }
+.footer-grid { display: grid; grid-template-columns: 1.3fr .9fr; gap: 48px; }
 .footer-brand p { max-width: 280px; margin-top: 14px; color: var(--ink-soft); font-size: .78rem; line-height: 1.7; }
 .footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; color: var(--ink-soft); font-size: .76rem; line-height: 1.5; }
 .footer-links strong { margin-bottom: 4px; color: var(--ink); font-size: .73rem; letter-spacing: .12em; text-transform: uppercase; }
