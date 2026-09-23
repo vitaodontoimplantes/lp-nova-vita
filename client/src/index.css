@@ -208,6 +208,9 @@ footer .brand-logo { width: 126px; }
 .nav-link:hover { color: var(--ink); }
 .nav-link:hover::after { width: 100%; }
 .simple-header { border-bottom: 1px solid #20221f12; background: #f8f5efee; }
+.header-nav { display: flex; align-items: center; gap: 25px; margin-left: auto; margin-right: 10px; }
+.header-nav a { color: var(--ink-soft); font-size: .72rem; font-weight: 700; letter-spacing: .04em; transition: color .2s ease; }
+.header-nav a:hover { color: var(--gold); }
 .whatsapp-button { display: inline-flex; align-items: center; gap: 9px; border-radius: 999px; background: var(--whatsapp); color: #fff; font-size: .86rem; font-weight: 700; box-shadow: 0 12px 24px #218c6230; transition: transform .16s ease, box-shadow .2s ease, background .2s ease; }
 .whatsapp-button:hover { background: #1b7955; box-shadow: 0 14px 28px #218c6240; transform: translateY(-2px); }
 .whatsapp-button:active { transform: scale(.97); }
@@ -248,6 +251,11 @@ footer .brand-logo { width: 126px; }
 .ppc-proof strong, .ppc-proof span { display: block; }
 .ppc-proof strong { font-size: .82rem; }
 .ppc-proof span { margin-top: 3px; color: var(--ink-soft); font-size: .73rem; }
+.ppc-info { background: var(--paper); padding: 5.7rem 0; }
+.info-cards article { border-top: 1px solid #20221f25; padding-top: 18px; }
+.info-cards article > span { color: var(--gold); font-size: .7rem; font-weight: 700; letter-spacing: .15em; }
+.info-cards h3 { margin-top: 15px; font-family: "Playfair Display", Georgia, serif; font-size: 1.65rem; letter-spacing: -.02em; }
+.info-cards p { max-width: 290px; margin-top: 7px; color: var(--ink-soft); font-size: .84rem; line-height: 1.7; }
 .ppc-process { background: #eee9df; padding: 5.7rem 0; }
 .ppc-section-heading { max-width: 620px; }
 .ppc-steps > div { border-top: 1px solid #20221f25; padding-top: 17px; }
@@ -317,6 +325,12 @@ footer .brand-logo { width: 126px; }
 }
 .floating-whatsapp:hover { transform: scale(1.07); }
 .floating-whatsapp-labeled { display: inline-flex; height: auto; width: auto; gap: 8px; padding: 12px 17px 12px 13px; border-width: 3px; font-size: .78rem; font-weight: 700; }
+.footer-grid { display: grid; grid-template-columns: 1.3fr .8fr .9fr; gap: 48px; }
+.footer-brand p { max-width: 280px; margin-top: 14px; color: var(--ink-soft); font-size: .78rem; line-height: 1.7; }
+.footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; color: var(--ink-soft); font-size: .76rem; line-height: 1.5; }
+.footer-links strong { margin-bottom: 4px; color: var(--ink); font-size: .73rem; letter-spacing: .12em; text-transform: uppercase; }
+.footer-links a:hover { color: var(--gold); }
+.footer-bottom { border-top: 1px solid #20221f12; padding-top: 18px; padding-bottom: 24px; color: var(--ink-soft); font-size: .66rem; line-height: 1.6; }
 .mobile-cta { display: none; }
 .animate-fade-up { animation: fade-up .7s cubic-bezier(.23,1,.32,1) both; }.animate-fade-in { animation: fade-in .9s cubic-bezier(.23,1,.32,1) .12s both; }
 @keyframes fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
@@ -340,7 +354,9 @@ footer .brand-logo { width: 126px; }
   .ppc-proof > .container > div { border-bottom: 1px solid #20221f15; padding: 10px 0; }
   .ppc-proof > .container > div:last-child { border-bottom: 0; }
   .ppc-process, .ppc-faq { padding-top: 4.2rem; padding-bottom: 4.2rem; }
+  .ppc-info { padding-top: 4.2rem; padding-bottom: 4.2rem; }
   .ppc-final { padding-top: 3.3rem; padding-bottom: 3.3rem; }
+  .header-nav { display: none; }
   .simple-header .brand-logo { width: 124px; }
   footer .brand-logo { width: 116px; }
   .section-space, .dark-section, .location-section { padding-top: 5rem; padding-bottom: 5rem; }
@@ -351,5 +367,8 @@ footer .brand-logo { width: 126px; }
   .mobile-cta { position: fixed; right: 0; bottom: 0; left: 0; z-index: 45; display: flex; justify-content: center; border-top: 1px solid #20221f15; background: #f8f5efd9; padding: 10px 16px; backdrop-filter: blur(14px); }
   .mobile-cta .whatsapp-button { width: 100%; justify-content: center; }
   footer { padding-bottom: 80px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-brand p { max-width: 320px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
