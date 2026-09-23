@@ -188,8 +188,9 @@
   --whatsapp: #218c62;
 }
 
-html { scroll-behavior: smooth; }
-body { font-family: "Plus Jakarta Sans", sans-serif; background: var(--paper); color: var(--ink); }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { min-width: 320px; overflow-x: hidden; font-family: "Plus Jakarta Sans", sans-serif; background: var(--paper); color: var(--ink); }
+img, video { max-width: 100%; }
 ::selection { background: #ef7a7f55; color: var(--ink); }
 .bg-paper { background: var(--paper); }
 .text-ink { color: var(--ink); }
