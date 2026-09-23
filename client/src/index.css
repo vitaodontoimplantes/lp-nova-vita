@@ -367,10 +367,7 @@ footer .brand-logo { width: 126px; }
   .trust-item { border-right: 0; border-bottom: 1px solid #20221f15; padding: 4px 0 16px; }
   .trust-item:last-child { border-bottom: 0; padding-bottom: 4px; }
   .feature-card-dark.sm\:translate-y-8 { transform: none; }
-  .floating-whatsapp { right: 16px; bottom: 82px; height: 54px; width: 54px; }
-  .mobile-cta { position: fixed; right: 0; bottom: 0; left: 0; z-index: 45; display: flex; justify-content: center; border-top: 1px solid #20221f15; background: #f8f5efd9; padding: 10px 16px; backdrop-filter: blur(14px); }
-  .mobile-cta .whatsapp-button { width: 100%; justify-content: center; }
-  footer { padding-bottom: 80px; }
+  .floating-whatsapp { right: 16px; bottom: 16px; height: 54px; width: 54px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-brand p { max-width: 320px; }
