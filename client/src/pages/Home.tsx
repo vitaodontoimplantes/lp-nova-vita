@@ -16,7 +16,7 @@ function trackConversion(event: string, placement: string) {
 }
 
 function Logo() {
-  return <a href="#inicio" aria-label="Vita Sorriso - início"><img src="/assets/vita-logo.png" alt="Vita Sorriso Implantes" className="brand-logo" /></a>;
+  return <a href="#inicio" aria-label="Vita Sorriso - início"><img src="/assets/vita-logo-red.png" alt="Vita Sorriso Implantes" className="brand-logo" /></a>;
 }
 
 function WhatsAppIcon({ size = 21 }: { size?: number }) {
