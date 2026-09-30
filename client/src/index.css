@@ -233,7 +233,7 @@ footer .brand-logo { width: 126px; }
 .clinic-hero-main { min-height: 0; border-radius: 2px 84px 2px 84px; }
 .clinic-hero-main img { height: 100%; width: 100%; object-fit: cover; object-position: center; }
 .clinic-hero-thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.clinic-hero-thumbs img { height: 100%; min-height: 0; width: 100%; border-radius: 26px 2px 26px 2px; object-fit: cover; object-position: center; }
+.clinic-hero-thumbs img { height: 100%; min-height: 0; width: 100%; border-radius: 26px 2px 26px 2px; object-fit: cover; object-position: center 58%; }
 .clinic-hero-thumbs img:last-child { border-radius: 2px 26px 2px 26px; }
 .ppc-hero .whatsapp-button { min-height: 54px; box-shadow: 0 14px 27px #218c6240; }
 .hero-image-shade { position: absolute; inset: 0; background: linear-gradient(135deg, #fffaf000 35%, #1c39301c 100%); }
@@ -402,7 +402,7 @@ footer .brand-logo { width: 126px; }
 .clinic-hero-gallery { width: 100%; max-width: 600px; margin-inline: auto; }
 .clinic-hero-main, .clinic-hero-thumbs img { min-width: 0; }
 .clinic-hero-main img { display: block; object-position: center 42%; }
-.clinic-hero-thumbs img { object-position: center; }
+.clinic-hero-thumbs img { object-position: center 58%; }
 
 @media (min-width: 768px) {
   .ppc-hero > .container { min-height: 610px; }
