@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vitaodontoimplantes.com.br/sitemap.xml
