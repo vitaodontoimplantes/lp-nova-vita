@@ -635,3 +635,14 @@ footer .brand-logo { width: 126px; }
   .ppc-hero h1 { line-height: 1.01; letter-spacing: -.06em; }
   .info-cards article { padding: 19px; }
 }
+
+
+@media (min-width: 768px) {
+  .ppc-proof > .container { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .ppc-proof > .container > * {
+    border: 1px solid #c5161d20;
+    border-radius: 14px;
+    background: #fff;
+    padding: 14px 16px;
+  }
+}
