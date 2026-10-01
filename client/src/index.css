@@ -507,3 +507,33 @@ footer .brand-logo { width: 126px; }
 @media (max-width: 360px) {
   .simple-header .whatsapp-button { font-size: .76rem; }
 }
+
+/* Visual emphasis pass: typography with more presence while preserving the Vita premium feel. */
+.ppc-hero h1 {
+  max-width: 11ch;
+  font-size: clamp(3.35rem, 5.2vw, 5.15rem);
+  font-weight: 600;
+  line-height: .96;
+  letter-spacing: -.055em;
+}
+.ppc-hero p { max-width: 520px; font-size: 1.12rem; line-height: 1.62; }
+.section-title {
+  font-size: clamp(2.45rem, 4.6vw, 4rem);
+  font-weight: 500;
+  line-height: 1.01;
+  letter-spacing: -.05em;
+}
+.info-cards h3, .ppc-steps h3 { font-size: 1.95rem; font-weight: 500; }
+.info-cards p, .ppc-steps p { font-size: 1rem; }
+.ppc-final h2 { font-size: clamp(2.15rem, 4vw, 3.55rem); line-height: .98; letter-spacing: -.045em; }
+.whatsapp-button { font-size: 1.08rem; font-weight: 800; }
+.ppc-proof strong { font-size: .98rem; }
+
+@media (max-width: 767px) {
+  .ppc-hero h1 { max-width: 10ch; font-size: clamp(2.8rem, 13vw, 4rem); line-height: .98; }
+  .ppc-hero p { font-size: 1.05rem; }
+  .section-title { font-size: clamp(2.3rem, 10.5vw, 3.25rem); line-height: 1.02; }
+  .info-cards h3, .ppc-steps h3 { font-size: 1.8rem; }
+  .whatsapp-button { font-size: 1.02rem; }
+  .ppc-final h2 { font-size: clamp(2.15rem, 10vw, 3rem); }
+}
