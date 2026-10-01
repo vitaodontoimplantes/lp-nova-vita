@@ -651,3 +651,22 @@ footer .brand-logo { width: 126px; }
   /* On mobile, the bottom sticky CTA is the single primary WhatsApp action. */
   .simple-header .whatsapp-button { display: none; }
 }
+
+
+@media (max-width: 767px) {
+  /* First screen: contextual CTA in the hero. After scrolling: persistent CTA returns. */
+  .hero-cta-row { display: flex; }
+  .mobile-sticky-cta {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(110%);
+    pointer-events: none;
+    transition: opacity .22s ease, visibility .22s ease, transform .22s ease;
+  }
+  .mobile-sticky-cta.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
