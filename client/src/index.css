@@ -491,3 +491,19 @@ footer .brand-logo { width: 126px; }
   .header-nav { gap: 7px; }
   .header-nav a { font-size: .59rem; }
 }
+
+/* CTA emphasis: stronger labels while keeping buttons compact and touch-friendly. */
+.whatsapp-button { font-size: 1.05rem; letter-spacing: -.01em; }
+.outline-button { font-size: 1rem; }
+.text-link { font-size: .95rem; }
+.floating-whatsapp-labeled { font-size: .88rem; }
+
+@media (max-width: 767px) {
+  .simple-header .whatsapp-button { font-size: .82rem; }
+  .ppc-hero .whatsapp-button { font-size: 1rem; }
+  .floating-whatsapp-labeled { font-size: .88rem; }
+}
+
+@media (max-width: 360px) {
+  .simple-header .whatsapp-button { font-size: .76rem; }
+}
