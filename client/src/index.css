@@ -690,3 +690,29 @@ footer .brand-logo { width: 126px; }
     animation: whatsapp-pulse 2.4s ease-out infinite, whatsapp-blink 2.4s ease-in-out infinite;
   }
 }
+
+/* Final responsive contract: no overflow, stable grids and touch-friendly actions. */
+*, *::before, *::after { box-sizing: border-box; }
+#root { width: 100%; min-width: 0; overflow-x: clip; }
+img, video, svg { max-width: 100%; }
+
+@media (max-width: 767px) {
+  .container { width: 100%; max-width: 100%; }
+  .ppc-hero > .container { grid-template-columns: minmax(0, 1fr); }
+  .ppc-hero > .container > *, .video-testimonials > .container > *, .ppc-info > .container > *, .ppc-process > .container > *, .ppc-faq > .container > * { min-width: 0; }
+  .hero-cta-row { width: 100%; }
+  .hero-cta-row .whatsapp-button { width: 100%; justify-content: center; }
+  .ppc-hero-visual, .clinic-hero-gallery, .clinic-hero-main, .clinic-hero-thumbs { width: 100%; min-width: 0; }
+  .clinic-hero-main img, .clinic-hero-thumbs img { display: block; min-width: 0; }
+  .faq-item summary { min-width: 0; overflow-wrap: anywhere; }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .ppc-hero > .container { grid-template-columns: minmax(0, 1fr); min-height: auto; }
+  .ppc-hero-visual { width: min(100%, 680px); margin-inline: auto; }
+  .ppc-hero h1 { max-width: 13ch; font-size: clamp(3.4rem, 7vw, 4.8rem); }
+}
+
+@media (min-width: 900px) {
+  .ppc-hero > .container > *, .ppc-proof > .container > *, .info-cards > *, .ppc-steps > * { min-width: 0; }
+}
