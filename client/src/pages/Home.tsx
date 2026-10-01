@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { ArrowUpRight, Check, ChevronDown, MapPin, MessageCircle, Phone, Star } from "lucide-react";
 
 declare global {
