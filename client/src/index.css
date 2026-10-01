@@ -571,3 +571,41 @@ footer .brand-logo { width: 126px; }
   }
   .mobile-sticky-cta .whatsapp-button { width: 100%; justify-content: center; min-height: 52px; }
 }
+
+/* Responsive polish: stable proportions across phone, tablet and desktop widths. */
+.clinic-hero-gallery img { max-width: 100%; }
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .simple-header .container { flex-wrap: wrap; }
+  .header-nav { order: 3; flex-basis: 100%; justify-content: center; margin: 0; padding-bottom: 12px; }
+  .ppc-hero > .container { min-height: auto; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: 2rem; padding-top: 3.2rem; padding-bottom: 3.2rem; }
+  .ppc-hero h1 { font-size: clamp(3.25rem, 5.2vw, 4.4rem); }
+  .ppc-hero-visual.clinic-hero-gallery { height: 500px; }
+  .section-title { font-size: clamp(2.5rem, 4.2vw, 3.5rem); }
+}
+
+@media (min-width: 1200px) {
+  .ppc-hero > .container { min-height: 660px; }
+  .ppc-hero h1 { font-size: clamp(4.3rem, 5vw, 5.3rem); }
+  .ppc-hero p { font-size: 1.16rem; }
+}
+
+@media (max-width: 767px) {
+  .ppc-hero > .container { padding-top: 2.6rem; padding-bottom: 2.2rem; }
+  .ppc-hero h1 { max-width: 9.5ch; }
+  .ppc-hero .hero-note { pointer-events: none; }
+  .ppc-proof > .container > * { min-width: 0; padding: 11px 0; }
+  .ppc-proof > .container > a { display: block; }
+  .video-testimonials-heading > p, .ppc-section-heading > p { max-width: 100%; }
+  .footer-bottom { padding-bottom: 96px; }
+}
+
+@media (max-width: 420px) {
+  .simple-header .container { gap: 8px; }
+  .simple-header .brand-logo { width: 100px; }
+  .simple-header .whatsapp-button { padding: .58rem .62rem; font-size: .72rem; }
+  .header-nav { gap: 8px; }
+  .header-nav a { font-size: .59rem; }
+  .ppc-hero h1 { font-size: clamp(2.65rem, 13.2vw, 3.45rem); }
+  .ppc-hero p { font-size: .98rem; }
+}
