@@ -469,3 +469,25 @@ footer .brand-logo { width: 126px; }
   .info-cards p, .ppc-steps p, .faq-item p { font-size: 1rem; line-height: 1.62; }
   .faq-item summary { font-size: 1.02rem; }
 }
+
+/* Final responsive pass: prevent header overflow and keep tablet proportions balanced. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .simple-header .container { flex-wrap: wrap; }
+  .header-nav { order: 3; flex-basis: 100%; justify-content: center; margin: 0; padding: 0 0 12px; }
+  .ppc-hero > .container { min-height: auto; }
+  .ppc-hero-visual { justify-self: center; }
+}
+
+@media (max-width: 767px) {
+  .simple-header .container { flex-wrap: wrap; }
+  .header-nav { flex-basis: 100%; justify-content: space-between; gap: 10px; margin-top: 2px; }
+  .header-nav a { font-size: .64rem; letter-spacing: .02em; }
+  .ppc-hero > .container { min-height: auto; }
+}
+
+@media (max-width: 360px) {
+  .simple-header .brand-logo { width: 102px; }
+  .simple-header .whatsapp-button { padding: .62rem .7rem; font-size: .7rem; }
+  .header-nav { gap: 7px; }
+  .header-nav a { font-size: .59rem; }
+}
