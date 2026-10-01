@@ -885,3 +885,54 @@ body { font-family: "Plus Jakarta Sans", "Manrope", sans-serif; font-size: 16px;
   .info-cards h3, .ppc-steps h3 { font-size: 1.5rem; }
   .faq-item summary { font-size: 1rem; }
 }
+
+
+/* Correção estrutural da mídia: elimina regras antigas que causavam sobreposição. */
+.ppc-hero-visual.clinic-hero-gallery {
+  height: auto !important;
+  min-height: 0 !important;
+  grid-template-rows: auto auto !important;
+  align-content: start;
+}
+.ppc-hero-visual.clinic-hero-gallery .clinic-hero-main {
+  height: auto;
+  aspect-ratio: 3 / 4;
+}
+.ppc-hero-visual.clinic-hero-gallery .clinic-hero-main img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs {
+  position: static;
+  height: auto;
+  min-height: 0;
+}
+.ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs img {
+  display: block;
+  height: auto;
+  min-height: 0;
+  object-fit: cover;
+}
+.video-testimonials-grid { grid-template-columns: repeat(2, minmax(0, 280px)); justify-content: center; }
+.video-testimonial-card { max-width: 280px; justify-self: center; }
+.video-frame { aspect-ratio: 9 / 16; width: 100%; }
+.video-frame video { display: block; height: 100%; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; }
+
+@media (max-width: 767px) {
+  .video-testimonials-grid { grid-template-columns: minmax(0, 245px); max-width: 245px; }
+  .video-testimonial-card { max-width: 245px; }
+  .ppc-hero-visual.clinic-hero-gallery { grid-template-rows: auto auto !important; }
+}
+
+
+/* Último ajuste da galeria: a grade cresce com a imagem, nunca sobrepõe os itens. */
+.ppc-hero-visual.clinic-hero-gallery {
+  max-height: none !important;
+  overflow: visible;
+  grid-auto-rows: max-content;
+}
+@media (min-width: 768px) {
+  .ppc-hero-visual.clinic-hero-gallery { width: min(100%, 460px); }
+}
