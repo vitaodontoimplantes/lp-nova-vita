@@ -537,3 +537,37 @@ footer .brand-logo { width: 126px; }
   .whatsapp-button { font-size: 1.02rem; }
   .ppc-final h2 { font-size: clamp(2.15rem, 10vw, 3rem); }
 }
+
+
+/* Google Ads conversion pass: stronger first impression, trust and mobile action. */
+.topline { border-bottom: 0; background: var(--gold); color: #fff; }
+.topline-dot { background: #fff; box-shadow: 0 0 0 4px #ffffff35; }
+.ppc-hero { background: linear-gradient(135deg, #fff 0%, #fff 70%, #fff8f8 100%); }
+.ppc-hero .eyebrow { font-size: .78rem; font-weight: 800; letter-spacing: .18em; }
+.ppc-hero .whatsapp-button { min-height: 62px; box-shadow: 0 16px 34px #218c6248; }
+.ppc-hero .whatsapp-button:hover { box-shadow: 0 18px 38px #218c625c; }
+.ppc-proof { background: #fffafa; }
+.ppc-proof > .container { gap: 1.25rem; }
+.ppc-proof strong { font-weight: 800; }
+.mobile-sticky-cta { display: none; }
+
+@media (max-width: 767px) {
+  .topline { min-height: 32px; font-size: .58rem; letter-spacing: .08em; }
+  .ppc-hero { background: linear-gradient(180deg, #fff 0%, #fff 74%, #fff8f8 100%); }
+  .ppc-hero .whatsapp-button { min-height: 58px; }
+  .floating-whatsapp { display: none; }
+  .mobile-sticky-cta {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 60;
+    display: block;
+    border-top: 1px solid #c5161d1c;
+    background: #ffffffee;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    box-shadow: 0 -8px 24px #20221f18;
+    backdrop-filter: blur(12px);
+  }
+  .mobile-sticky-cta .whatsapp-button { width: 100%; justify-content: center; min-height: 52px; }
+}
