@@ -716,3 +716,21 @@ img, video, svg { max-width: 100%; }
 @media (min-width: 900px) {
   .ppc-hero > .container > *, .ppc-proof > .container > *, .info-cards > *, .ppc-steps > * { min-width: 0; }
 }
+
+
+@media (max-width: 767px) {
+  /* Keep the first screen clean; reveal the mobile float after a short scroll. */
+  .floating-whatsapp {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.78);
+  }
+  .floating-whatsapp.is-visible {
+    display: grid;
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    animation: whatsapp-pulse 2.4s ease-out infinite, whatsapp-blink 2.4s ease-in-out infinite;
+  }
+}

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { ArrowUpRight, Check, ChevronDown, MapPin, MessageCircle, Phone, Star } from "lucide-react";
 
 declare global {
@@ -35,6 +36,15 @@ const faqs = [
 ];
 
 export default function Home() {
+  const [showMobileFloating, setShowMobileFloating] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowMobileFloating(window.scrollY > 260);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return <div className="min-h-screen overflow-x-hidden bg-paper text-ink">
     <div className="topline"><span className="topline-dot" /> Implantes dentários em Curitiba <span className="hidden sm:inline">· Segunda a sexta, 8h às 18h</span></div>
     <header className="simple-header"><div className="container flex min-h-[74px] items-center justify-between gap-5"><Logo /><nav className="header-nav" aria-label="Atalhos da página"><a href="#processo">Como funciona</a><a href="#depoimentos">Depoimentos</a><a href="#duvidas">Dúvidas</a><a href="#localizacao">Localização</a></nav><WhatsAppButton compact placement="header" /></div></header>
@@ -57,6 +67,6 @@ export default function Home() {
     </main>
 
     <footer className="border-t border-ink/10 bg-paper"><div className="container footer-grid py-9"><div className="footer-brand"><Logo /><p>Implantes dentários com avaliação individual e atendimento especializado em Curitiba.</p></div><div className="footer-links"><strong>Localização</strong><a href={mapsUrl} target="_blank" rel="noreferrer" onClick={() => trackConversion("maps_click", "footer")}>Como chegar</a><span>Rua José Loureiro, 268<br />Centro · Curitiba/PR</span></div></div><div className="container footer-bottom"><p>Vita Sorriso Implantes · Curitiba/PR<br />Resultados, prazos e indicação variam conforme avaliação clínica individual.</p></div></footer>
-    <a href={whatsappUrl} target="_blank" rel="noreferrer" className="floating-whatsapp" aria-label="Agendar avaliação pelo WhatsApp" onClick={() => trackConversion("whatsapp_lead", "floating")}><WhatsAppIcon size={31} /></a>
+    <a href={whatsappUrl} target="_blank" rel="noreferrer" className={`floating-whatsapp ${showMobileFloating ? "is-visible" : ""}`} aria-label="Agendar avaliação pelo WhatsApp" onClick={() => trackConversion("whatsapp_lead", "floating")}><WhatsAppIcon size={31} /></a>
   </div>;
 }
