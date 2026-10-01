@@ -1026,3 +1026,24 @@ body { font-family: "Plus Jakarta Sans", "Manrope", sans-serif; font-size: 16px;
   }
   .video-testimonial-card { max-width: 240px; }
 }
+
+
+/* Mídia mobile compacta: primeira imagem e depoimentos ocupam apenas o necessário. */
+@media (max-width: 767px) {
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-main {
+    height: clamp(250px, 76vw, 315px);
+    aspect-ratio: auto;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-main img {
+    object-position: center 45%;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs {
+    height: clamp(92px, 24vw, 122px);
+  }
+  .video-testimonials-grid {
+    width: min(100%, 230px);
+    max-width: 230px;
+    grid-template-columns: minmax(0, 230px);
+  }
+  .video-testimonial-card { max-width: 230px; }
+}
