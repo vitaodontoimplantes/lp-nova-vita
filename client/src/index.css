@@ -383,7 +383,9 @@ footer .brand-logo { width: 126px; }
   .video-frame video { transform: none; }
   .ppc-info { padding-top: 4.2rem; padding-bottom: 4.2rem; }
   .ppc-final { padding-top: 3.3rem; padding-bottom: 3.3rem; }
-  .header-nav { display: none; }
+  .header-nav { display: flex; order: 3; width: 100%; margin: 1px 0 0; gap: 18px; overflow-x: auto; padding-bottom: 3px; scrollbar-width: none; }
+  .header-nav::-webkit-scrollbar { display: none; }
+  .header-nav a { flex: 0 0 auto; white-space: nowrap; font-size: .67rem; }
   .simple-header .brand-logo { width: 124px; }
   footer .brand-logo { width: 116px; }
   .section-space, .dark-section, .location-section { padding-top: 5rem; padding-bottom: 5rem; }
