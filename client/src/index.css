@@ -646,3 +646,8 @@ footer .brand-logo { width: 126px; }
     padding: 14px 16px;
   }
 }
+
+@media (max-width: 767px) {
+  /* On mobile, the bottom sticky CTA is the single primary WhatsApp action. */
+  .simple-header .whatsapp-button { display: none; }
+}
