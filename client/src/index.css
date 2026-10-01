@@ -737,10 +737,11 @@ img, video, svg { max-width: 100%; }
 
 
 /* Conversão + responsividade: regras finais, sem cortes em telas pequenas. */
-.video-testimonials-grid { max-width: 760px; }
+.video-testimonials-grid { max-width: 620px; }
 .video-testimonial-card { min-width: 0; }
 .video-testimonial-caption strong { font-family: "Manrope", sans-serif; font-size: 1rem; font-weight: 700; line-height: 1.25; }
-.video-frame video { aspect-ratio: 9 / 16; }
+.video-frame { aspect-ratio: 3 / 4; }
+.video-frame video { aspect-ratio: auto; object-fit: contain; }
 .brand-logo { aspect-ratio: 1; }
 
 @media (max-width: 767px) {
@@ -764,9 +765,9 @@ img, video, svg { max-width: 100%; }
   .ppc-proof strong { font-size: .8rem; line-height: 1.25; }
   .ppc-proof span { font-size: .66rem; line-height: 1.35; }
   .video-testimonials, .ppc-info, .ppc-process, .ppc-faq { padding-top: 3.5rem; padding-bottom: 3.5rem; }
-  .video-testimonials-grid { max-width: 360px; margin-top: 24px; }
+  .video-testimonials-grid { max-width: 290px; margin-top: 24px; }
   .video-testimonial-card { border-radius: 14px; }
-  .video-frame { aspect-ratio: 9 / 14; }
+  .video-frame { aspect-ratio: 3 / 4; }
   .video-testimonial-caption { padding: 12px 13px 14px; }
   .video-testimonial-caption span { font-size: .58rem; }
   .video-testimonials .whatsapp-button { min-height: 48px; }
