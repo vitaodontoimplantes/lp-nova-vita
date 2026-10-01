@@ -1047,3 +1047,47 @@ body { font-family: "Plus Jakarta Sans", "Manrope", sans-serif; font-size: 16px;
   }
   .video-testimonial-card { max-width: 230px; }
 }
+
+
+/* Refinamento profissional da galeria: destaque controlado e fachadas completas. */
+@media (min-width: 768px) {
+  .ppc-hero-visual.clinic-hero-gallery {
+    width: min(100%, 500px);
+    height: clamp(400px, 33vw, 500px) !important;
+    grid-template-columns: minmax(0, 1.35fr) minmax(150px, .9fr);
+    gap: 12px;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs {
+    gap: 12px;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs img {
+    object-position: center bottom;
+  }
+}
+
+@media (max-width: 767px) {
+  .ppc-hero > .container { gap: 1.45rem; }
+  .ppc-hero-visual.clinic-hero-gallery {
+    width: min(100%, 340px);
+    justify-self: center;
+    gap: 10px;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-main {
+    height: clamp(230px, 64vw, 285px);
+    border-radius: 2px 30px 2px 30px;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-main img {
+    object-position: center 42%;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs {
+    height: clamp(118px, 31vw, 145px);
+    gap: 10px;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs img {
+    object-position: center bottom;
+    border-radius: 12px 2px 12px 2px;
+  }
+  .ppc-hero-visual.clinic-hero-gallery .clinic-hero-thumbs img:last-child {
+    border-radius: 2px 12px 2px 12px;
+  }
+}
