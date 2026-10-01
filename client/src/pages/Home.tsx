@@ -57,6 +57,6 @@ export default function Home() {
     </main>
 
     <footer className="border-t border-ink/10 bg-paper"><div className="container footer-grid py-9"><div className="footer-brand"><Logo /><p>Implantes dentários com avaliação individual e atendimento especializado em Curitiba.</p></div><div className="footer-links"><strong>Localização</strong><a href={mapsUrl} target="_blank" rel="noreferrer" onClick={() => trackConversion("maps_click", "footer")}>Como chegar</a><span>Rua José Loureiro, 268<br />Centro · Curitiba/PR</span></div></div><div className="container footer-bottom"><p>Vita Sorriso Implantes · Curitiba/PR<br />Resultados, prazos e indicação variam conforme avaliação clínica individual.</p></div></footer>
-    <a href={whatsappUrl} target="_blank" rel="noreferrer" className="floating-whatsapp floating-whatsapp-labeled" aria-label="Agendar avaliação pelo WhatsApp" onClick={() => trackConversion("whatsapp_lead", "floating")}><WhatsAppIcon size={24} /><span>Agendar avaliação</span></a>
+    <a href={whatsappUrl} target="_blank" rel="noreferrer" className="floating-whatsapp" aria-label="Agendar avaliação pelo WhatsApp" onClick={() => trackConversion("whatsapp_lead", "floating")}><WhatsAppIcon size={31} /></a>
   </div>;
 }
