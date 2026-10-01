@@ -615,3 +615,23 @@ footer .brand-logo { width: 126px; }
   /* The persistent mobile CTA already follows the visitor; avoid a duplicate hero button. */
   .hero-cta-row { display: none; }
 }
+
+
+/* Vita visual direction inspired by high-performing implant LPs: bold sans typography and clearer blocks. */
+.font-display { font-family: "Manrope", sans-serif; font-weight: 800; }
+.hero-location { display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.hero-location svg { flex: 0 0 auto; }
+.section-title { font-family: "Manrope", sans-serif; font-weight: 800; }
+.ppc-hero h1 { font-family: "Manrope", sans-serif; font-weight: 800; line-height: 1.02; letter-spacing: -.065em; }
+.ppc-hero h1 em { font-style: normal; }
+.video-testimonials, .ppc-info, .ppc-process, .ppc-faq { position: relative; }
+.video-testimonial-card { border-radius: 18px; }
+.info-cards article { border: 1px solid #c5161d20; border-top: 4px solid var(--gold); border-radius: 14px; background: #fffafa; padding: 22px; }
+.ppc-steps > div { border-top: 3px solid var(--gold); }
+.ppc-proof { border-color: #c5161d26; }
+
+@media (max-width: 767px) {
+  .hero-location { font-size: .65rem; letter-spacing: .06em; }
+  .ppc-hero h1 { line-height: 1.01; letter-spacing: -.06em; }
+  .info-cards article { padding: 19px; }
+}
