@@ -442,7 +442,7 @@ footer .brand-logo { width: 126px; }
 /* Typography refinement: same Vita Sorriso identity, clearer hierarchy and reading rhythm. */
 .eyebrow { font-size: .72rem; letter-spacing: .16em; }
 .whatsapp-button { font-size: .95rem; }
-.ppc-hero h1 { font-size: clamp(3rem, 4vw, 3.5rem); line-height: 1.02; letter-spacing: -.045em; }
+.ppc-hero h1 { color: #8f1d25; font-size: clamp(3rem, 4vw, 3.5rem); line-height: 1.02; letter-spacing: -.045em; }
 .ppc-hero p { font-size: 1.05rem; line-height: 1.6; }
 .ppc-proof strong { font-size: .88rem; line-height: 1.25; }
 .ppc-proof span { font-size: .82rem; line-height: 1.45; }
