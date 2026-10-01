@@ -670,3 +670,23 @@ footer .brand-logo { width: 126px; }
     pointer-events: auto;
   }
 }
+
+
+@keyframes whatsapp-blink {
+  0%, 100% { transform: scale(1); }
+  45% { transform: scale(1.08); }
+  55% { transform: scale(.98); }
+}
+
+@media (max-width: 767px) {
+  /* Mobile uses one familiar, pulsing WhatsApp float instead of a sticky bottom bar. */
+  .mobile-sticky-cta { display: none !important; }
+  .floating-whatsapp {
+    display: grid;
+    right: 16px;
+    bottom: 18px;
+    height: 58px;
+    width: 58px;
+    animation: whatsapp-pulse 2.4s ease-out infinite, whatsapp-blink 2.4s ease-in-out infinite;
+  }
+}
