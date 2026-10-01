@@ -433,3 +433,8 @@ footer .brand-logo { width: 126px; }
   .faq-item summary { gap: 12px; font-size: 1.08rem; }
   .floating-whatsapp { right: 14px; bottom: 14px; }
 }
+
+@media (max-width: 767px) {
+  .floating-whatsapp.floating-whatsapp-labeled { right: 14px; bottom: 14px; height: auto; width: auto; min-height: 50px; max-width: calc(100vw - 28px); padding: 11px 15px 11px 12px; font-size: .75rem; }
+  .floating-whatsapp.floating-whatsapp-labeled span { white-space: nowrap; }
+}
