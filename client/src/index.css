@@ -204,3 +204,12 @@ h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong {
 .treatment-card-featured p { color: var(--muted); }
 .treatment-card-featured .card-number { color: var(--teal); }
 .treatment-card-featured .card-icon { background: #f3e5e6; color: var(--teal); }
+
+/* The testimonials are native 9:16 vertical videos: let each video fill its card naturally. */
+.testimonial-grid { max-width: 650px; }
+.testimonial-media { aspect-ratio: 9 / 16; background: #ffffff; }
+.testimonial-media video, .testimonial-poster img { object-fit: cover; background: #ffffff; }
+@media (max-width: 560px) {
+  .testimonial-grid { max-width: 100%; }
+  .testimonial-media { aspect-ratio: 9 / 16; }
+}
