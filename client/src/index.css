@@ -197,3 +197,10 @@ h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong {
   .final-cta-inner, .clinic-actions, .hero-actions { width: 100%; }
   .final-cta .whatsapp-button, .clinic-actions .whatsapp-button { width: 100%; }
 }
+
+/* Keep the protocol card light for maximum text contrast. */
+.treatment-card-featured { border-color: #e4dddd; background: #ffffff; color: var(--ink); }
+.treatment-card-featured h3 { color: var(--ink); }
+.treatment-card-featured p { color: var(--muted); }
+.treatment-card-featured .card-number { color: var(--teal); }
+.treatment-card-featured .card-icon { background: #f3e5e6; color: var(--teal); }
