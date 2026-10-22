@@ -182,3 +182,18 @@ h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong {
 .footer-grid strong { color: var(--ink); }
 .footer-grid a { color: var(--orange-dark); }
 .footer-bottom { border-top-color: #dedede; color: var(--muted); }
+
+/* Conversion controls: WhatsApp keeps its official green, while the brand remains red/black. */
+.whatsapp-button { background: #25d366; color: #ffffff; box-shadow: 0 12px 25px rgba(37, 211, 102, .24); }
+.whatsapp-button:hover { background: #1da851; box-shadow: 0 16px 32px rgba(37, 211, 102, .3); }
+.treatment-card-featured .whatsapp-button, .final-cta .whatsapp-button { background: #25d366; color: #ffffff; }
+.treatment-card-featured .whatsapp-button:hover, .final-cta .whatsapp-button:hover { background: #1da851; }
+.clinic-section .contact-list, .clinic-section .clinic-copy > p, .clinic-section .clinic-copy h2, .clinic-section .contact-list strong { color: #ffffff; }
+.clinic-section .contact-list > div, .clinic-section .clinic-copy > p { color: #f2f2f2; }
+.final-cta p { color: #ffffff; }
+.footer-grid p, .footer-bottom, .faq-item p, .section-heading > p, .treatment-card p, .steps-grid p { overflow-wrap: anywhere; }
+@media (max-width: 720px) {
+  .whatsapp-button { max-width: 100%; }
+  .final-cta-inner, .clinic-actions, .hero-actions { width: 100%; }
+  .final-cta .whatsapp-button, .clinic-actions .whatsapp-button { width: 100%; }
+}
