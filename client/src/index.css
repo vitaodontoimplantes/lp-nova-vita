@@ -75,7 +75,7 @@ body { color: var(--ink); }
 h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong { color: var(--ink); }
 .hero-copy > p, .section-heading > p, .treatment-card p, .steps-grid p, .faq-item p, .clinic-copy > p { color: var(--muted); }
 .brand-logo { mix-blend-mode: normal; object-fit: contain; }
-.header-inner .brand-logo { border-radius: 12px; background: var(--teal-dark); padding: 6px 8px; }
+.header-inner .brand-logo { border-radius: 0; background: transparent; padding: 0; }
 .footer-grid .brand-logo { filter: none; background: transparent; padding: 0; }
 .treatment-card-featured h3, .treatment-card-featured .whatsapp-button, .clinic-section h2, .final-cta h2 { color: #fff; }
 .treatment-card-featured .whatsapp-button { background: #c94b2b; }
