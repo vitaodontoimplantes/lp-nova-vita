@@ -222,3 +222,9 @@ h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong {
   .testimonial-grid { max-width: 100%; }
   .testimonial-media { aspect-ratio: 1 / 1; }
 }
+
+/* Focal points for the burned-in captions: keep the person visible while cropping the caption zones. */
+.testimonial-card:first-child .testimonial-media video,
+.testimonial-card:first-child .testimonial-poster img { object-position: center 62%; }
+.testimonial-card:nth-child(2) .testimonial-media video,
+.testimonial-card:nth-child(2) .testimonial-poster img { object-position: center 38%; }
