@@ -213,3 +213,12 @@ h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong {
   .testimonial-grid { max-width: 100%; }
   .testimonial-media { aspect-ratio: 9 / 16; }
 }
+
+/* Compact square testimonial cards: a controlled crop keeps faces and brand visible. */
+.testimonial-grid { max-width: 760px; }
+.testimonial-media { aspect-ratio: 1 / 1; overflow: hidden; }
+.testimonial-media video, .testimonial-poster img { object-fit: cover; object-position: center 50%; }
+@media (max-width: 560px) {
+  .testimonial-grid { max-width: 100%; }
+  .testimonial-media { aspect-ratio: 1 / 1; }
+}
