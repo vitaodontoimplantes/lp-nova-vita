@@ -101,7 +101,7 @@ h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong {
   .proof-grid { grid-template-columns: 1fr 1fr; }
   .proof-grid > a { grid-column: 1 / -1; grid-row: 1; }
   .treatment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .treatment-card:last-child { grid-column: 1 / -1; }
+  .treatment-card:last-child { grid-column: auto; }
   .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 32px; }
   .clinic-grid, .faq-grid { grid-template-columns: 1fr; }
   .clinic-gallery { width: min(100%, 620px); min-height: 440px; }
