@@ -89,6 +89,9 @@ h1, h2, h3, .faq-item summary, .proof-grid strong, .testimonial-caption strong {
   .clinic-grid { gap: 44px; }
   .faq-grid { gap: 48px; }
 }
+@media (min-width: 1081px) {
+  .hero-visual { transform: translateY(-14px); }
+}
 @media (max-width: 820px) {
   .container { padding-inline: 22px; }
   .header-inner { min-height: 72px; }
